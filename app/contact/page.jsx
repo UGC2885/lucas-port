@@ -41,7 +41,7 @@ const Contact = () => {
           <div className="xl:h-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Vamos trabalhar juntos!</h3>
-              <p className="text-white/60">Entre em contato comigo para conversarmos!</p>
+              <p className="text-white/60">Entre em contato comigo para conversarmos!!</p>
             </form>
           </div>
           {/* info */}
