@@ -4,11 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build tailwindcss build -o ./dist/tailwind.css && npm run build:css",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "build:css": "postcss input.css -o ./dist/tailwind.css",
-    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "lint": "next lint"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.1",
