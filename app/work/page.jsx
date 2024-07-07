@@ -38,7 +38,7 @@ const projects = [
     title: "Gerenciamento de finanças",
     description: "Primeiro projeto de jogo com JS",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Bootstrap" }, { name: "JavaScript" }],
-    image: "/assets/work/firstgame.png",
+    image: "/assets/work/orca.png",
     live: "https://ugc2885.github.io/AppOr-amentoPessoal/",
     github: "https://github.com/UGC2885/APPORCAMENTOPESSOALteste",
   },
