@@ -33,7 +33,7 @@ const about = {
     },
     {
       fieldName: "Linguagens",
-      fieldValue: "Inglês, Espanhol"
+      fieldValue: "Inglês Avançado, Espanhol"
     },
   ]
 }
@@ -45,16 +45,13 @@ const experience = {
   title: "Minha experiência",
   description: "Searching...",
   items: [
-    // Como não tenho experiências ainda, irei deixar aqui sem nada.
-    /* 
 
     {
-       company: "empresa"
-       position: "posição na empresa"
-       duration: "duração do cargo"
+       company: "Alfama Foods",
+       position: "Desenvolvedor Full Stack junior",
+       duration: "6 meses",  
+       activ: "Desenvolvimento de páginas web, mais especificamente um intranet para integração de informações. Construi uma APIREST do microsoft GRAPH usando Node.js e React.js, onde fazia uma conexão com o microsoft 365, puxando todos os eventos que estavam cadastrados no Outlook e Teams mostrando as informações em um calendário customizado. Fiz como um componente reutilizavel graças ao React.",
    }, 
-   
-   */
   ]
 }
 
@@ -100,7 +97,7 @@ const skills = {
     {
       icon: <FaHtml5 />,
       name: "HTML 5",
-    },
+    },  
     {
       icon: <FaCss3 />,
       name: "CSS 3",
@@ -110,7 +107,7 @@ const skills = {
       name: "JavaScript",
     },
     {
-      icon: <FaPhp />,
+      icon: <FaPhp />,  
       name: "PHP",
     },
     {
@@ -120,10 +117,6 @@ const skills = {
     {
       icon: <FaFigma />,
       name: "Figma",
-    },
-    {
-      icon: <FaJava />,
-      name: "Java",
     },
     {
       icon: <SiNextdotjs />,
@@ -188,16 +181,22 @@ const resume = () => {
                     {experience.items.map((item, index) => {
                       return (
                         <li 
-                        key={index} 
-                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          key={index} 
+                          className="bg-[#232329] py-6 px-10 rounded-xl flex flex-col justify-start items-center lg:items-start gap-2"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
+                          <h3 className="text-xl max-w-[260px] text-center lg:text-left">{item.position}</h3>
+                          
                           <div className="flex items-center gap-3">
                             {/* dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                             <p className="text-white/60">{item.company}</p>
                           </div>
+
+                          {/* Exibição correta do campo activ */}
+                          <p className="text-white/80 text-sm text-center lg:text-left mt-2 whitespace-normal break-words">
+                            {item.activ}
+                          </p>
                         </li>
                       )
                     })}

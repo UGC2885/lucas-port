@@ -16,7 +16,7 @@ const Home = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
             <h1 className="h1">
-              Fala! Sou <br /> <span className="text-accent">Lucas Bach</span> 
+              Eai! Sou <br /> <span className="text-accent">Lucas Bach</span> 
             </h1>
             <p className="max-w-[500px] mb-9 text-white">Me destaco na criação de experiências digitais com proficiencia em várias linguagens de programação e tecnologias.
             </p>

@@ -15,7 +15,7 @@ const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "Spotify Reclica",
+    title: "Spotify Replica",
     description: "Esse projeto foi baseado no site do Spotify de 2015, feito com bootstrap.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Bootstrap" }],
     image: "/assets/work/spotify.png",

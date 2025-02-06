@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaDownload } from "react-icons/fa";
 
 const info = [
   {
@@ -42,8 +42,28 @@ const Contact = () => {
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Vamos trabalhar juntos!</h3>
               <p className="text-white/60">Entre em contato comigo para conversarmos!!</p>
+
+              {/* Botões de Download */}
+              <div className="flex gap-4">
+                <a
+                  href="/curriculo/Lucas-Unzer-2025-portugues.pdf"
+                  download
+                  className="flex items-center gap-2 px-4 py-2 bg-accent text-white rounded-lg hover:bg-accent/80 transition"
+                >
+                  <FaDownload /> Baixar Currículo em Português
+                </a>
+
+                <a
+                  href="/curriculo/Lucas-Unzer-2025-english.pdf"
+                  download
+                  className="flex items-center gap-2 px-4 py-2 bg-accent text-white rounded-lg hover:bg-accent/80 transition"
+                >
+                  <FaDownload /> Baixar Currículo em Inglês
+                </a>
+              </div>
             </form>
           </div>
+
           {/* info */}
           <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
             <ul className="flex flex-col gap-10">
@@ -58,7 +78,7 @@ const Contact = () => {
                       <h3 className="text-xl">{item.description}</h3>
                     </div>
                   </li>
-                )
+                );
               })}
             </ul>
           </div>
