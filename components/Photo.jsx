@@ -25,7 +25,7 @@ const Photo = () => {
             >
 
             <Image 
-                src="/assets/newphotonobg.png" 
+                src="/assets/PerfilEdit.jpg" 
                 priority 
                 quality={100} 
                 fill 
